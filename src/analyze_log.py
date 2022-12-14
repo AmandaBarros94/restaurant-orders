@@ -11,9 +11,10 @@ def verify_file(path):
 
 
 def post_text(dishes_maria,
- hamburger_counter,
- never_ordered,
- days_not_attended):
+    hamburger_counter,
+    never_ordered,
+    days_not_attended
+):
     with open('data/mkt_campaign.txt', 'w') as file:
         lines = [
             list(Counter(dishes_maria))[0] + '\n',
