@@ -10,7 +10,10 @@ def verify_file(path):
         raise FileNotFoundError(f"Arquivo inexistente: '{path}'")
 
 
-def post_text(dishes_maria, hamburger_counter, never_ordered, days_not_attended):
+def post_text(dishes_maria,
+ hamburger_counter,
+ never_ordered,
+ days_not_attended):
     with open('data/mkt_campaign.txt', 'w') as file:
         lines = [
             list(Counter(dishes_maria))[0] + '\n',
